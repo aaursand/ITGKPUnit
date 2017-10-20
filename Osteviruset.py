@@ -33,13 +33,20 @@ def ostehyller(in_store, cheese):
 
 class Tester(unittest.TestCase):
 
+
     def test_a(self):
         global AllCheeses
-        self.assertEqual(ostehyller(AllCheeses, 'ridder'), ('gOMBOS-4', 'B16-3'))
+        self.assertEqual(ostehyller(AllCheeses, 'ridder'), ('GOMBOS-4', 'B16-3'))
 
 
+    def test_b(self):
+        global AllCheeses
+        self.assertEqual(ostehyller(AllCheeses, 'camembert'), ('A243-1', 'A234-2', 'A234-3', 'A234-4', 'A235-1', 'A235-2', 'A235-3'))
 
 
+    def test_c(self):
+        global AllCheeses
+        self.assertEqual(ostehyller(AllCheeses, 'gombost'), ('ZLAFS55-4', 'ZLAFS55-9', 'GOMBOS-7', 'A236-4'))
 
 
 if __name__ == '__main__':

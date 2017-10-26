@@ -22,5 +22,14 @@ class MyTestCase(unittest.TestCase):
         #Testfunksjon
         self.assertDictEqual(dict.get_my_family(), {'bror' : ["Petter", "Andreas", "Fredrik"], 'far': "Thorbjørn"})
 
+        dict.reset_my_family()
+
+        dict.add_multiple_members('fettere', ["Nils" , "Johan" , "Per"])
+        dict.add_family_member('onkel' , "Tore")
+        dict.add_multiple_members('søstre', ["Perina", "Perhutu", "Lille My"])
+
+        #Testfunksjon
+        self.assertDictEqual(dict.get_my_family(), {'fettere': ["Nils" , "Johan" , "Per"], 'onkel': "Tore" , 'søstre': ["Perina", "Perhutu", "Lille My"] })
+
 if __name__ == '__main__':
     unittest.main()

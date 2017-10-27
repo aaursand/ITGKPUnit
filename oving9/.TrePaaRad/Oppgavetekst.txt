@@ -1,3 +1,6 @@
+MERK: Ikke ferdig enda
+
+
 Læringsmål:
 *Lister
 *Funksjoner

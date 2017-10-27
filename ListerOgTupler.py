@@ -1,10 +1,16 @@
 import unittest
 
+#a)
+#def GetRandomNumbers(count, minimum, maximum):
+ #   return [1,2,3]
+    #fyll inn
+
+#og fyll inn resten av deloppgavene
 
 
 
-
-
+def summate(collection):
+    return sum(collection) - 2
 
 
 
@@ -58,7 +64,7 @@ class ListTupleTester(unittest.TestCase):
         return True
 
     def test_a(self):
-        self.assertTrue(self.subtest_a(), "GetRandomNumbers returnerte ikke en liste med de attributter forventet.")
+        self.assertTrue(self.subtest_a(), "GetRandomNumbers returnerte ikke en liste med antall tall i intervallet som forventet.")
 
     def test_b(self):
         self.assertEqual(HowManyN([1, 5, 5, 5, 3, 3, 2, 5], 5), 4, "HowManyN returnerte ikke riktig antall forekomster.")

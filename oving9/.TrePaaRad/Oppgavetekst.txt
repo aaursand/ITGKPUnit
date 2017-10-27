@@ -1,0 +1,32 @@
+Læringsmål:
+*Lister
+*Funksjoner
+*Betingelser
+*Strenger
+
+I denne oppgaven skal du implementere det populære spillet tre-på-rad.
+Spillet er for to spillere, x og o, som plasserer brikker. En spiller vinner
+ved å få tre på rad, enten horisontalt, vertikalt eller diagonalt.
+
+Brettet skal representeres ved en liste av lister, hvor hver underliste er en
+rad i brettet. Tomme ruter skal representeres ved tomme strenger ("").
+
+a) Lag en funksjon som skriver ut brettet. Det kan f.eks. se slik ut:
+
+    1   2   3
+  -------------
+1 | x | o | x |
+  -------------
+2 | o | x | o |
+  -------------
+3 | x | o | x |
+  -------------
+
+Merk at denne funksjonen ikke testes.
+
+b) Lag en funksjon som sjekker om en spiller har vunnet.
+def PlayerWon(board, player)
+board skal ta imot listen som representerer brettet.
+player skal ta imot strengene 'x' eller 'o', som representerer spilleren.
+
+c) Lag en funksjon 

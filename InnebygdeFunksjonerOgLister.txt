@@ -1,3 +1,6 @@
+Bruke fet type for ordene som er del av koden
+
+
 Læringsmål:
 *Lister
 *Innebygde funksjoner
@@ -6,10 +9,11 @@ Læringsmål:
 Starting out with python:
 *Ch. 7: Lists and Tuples
 
-I denne oppgaven skal vibruke innebygde funksjoner i Python 
+I denne oppgaven skal vi bruke innebygde funksjoner i Python 
 til å behandle lister. Vi skal også forsøke testdrevet utvikling, 
-hvor du mottar et 'kodeskjelett'. For å kunne teste koden så må 
-den innkapsuleres i funksjoner.
+hvor du mottar et 'kodeskjelett' som inneholder tester som kaller
+funksjonene du skal i oppgaven. Ergo, for å kunne teste koden så må 
+den innkapsles i funksjoner. 
 
 Merk: Du finner informasjon og nyttige metoder her: 
 https://docs.python.org/3/tutorial/datastructures.html
@@ -17,12 +21,12 @@ https://docs.python.org/3/tutorial/datastructures.html
 
 a) Lag en funksjon GetRandomNumbers som har tre parametre: 
 count, minimum, og maximum. Funksjonen skal returnere 
-en liste bestående av count tilfeldige heltall 
-fra og med minimum til og med maximum.
+en liste bestående av count tilfeldige heltall på det 
+lukkede intervallet [minimum, maximum].
 
 b) Lag en funksjon HowManyN som har to parametre: collection og N.
 Funksjonen skal returnere et heltall, som er antall forekomster av
-tallet N i listen.
+tallet N i collection (som skal være en liste).
 
 c) Fungerer funksjonen fra oppgave b også med tupler? Hvis ikke,
 gjør om på funksjonen så den fungere både hvis collection mottar
@@ -41,7 +45,7 @@ g) skriv en funksjon mode som har en parameter: collection.
 Funksjonen skal returnere typetallet.
 
 h) skriv en funksjon reverse som har en parameter: collection.
-Funksjonen skal returnere listen baklengs.
+Funksjonen skal returnere listen med elementene i motsatt rekkefølge.
 
-** i) fungerer funksjonen i h også for turpler? Hvorfor/hvorfor ikke?
+** i) fungerer funksjonen i h også for tupler? Hvorfor/hvorfor ikke?
 Endr på funksjonen slik at den også fungerer for tupler.

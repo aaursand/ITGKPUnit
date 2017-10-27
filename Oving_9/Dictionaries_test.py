@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         dict.add_family_member('far', 'Petter')
 
         #Testfunksjon
-        self.assertDictEqual(dict.get_my_family(), {'far': "Petter"})
+        self.assertDictEqual(dict.get_my_family(), {'far': "Petter"}, "listen my_list skal inneholde { 'far': "+"Petter"+"}")
 
         dict.add_family_member('søster', "pamela")
 
